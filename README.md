@@ -1,5 +1,13 @@
-#Apresentação: Exercícios feitos:
+#Apresentação: Exercícios feitos em github.com/Nitael-dev
+-------------------------------------------------------
+Para download: git clone https://github.com/Nitael-dev/Apresentacao.git
 
+Para melhor visualização:
+
+Visual Studio Code + extenções Live Server, Node.js Exec
+
+Prática proposta
+------------------------
 ex001: Introdução ao JS;
 
 ex002: Comentários e concatenação;
