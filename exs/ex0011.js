@@ -1,11 +1,11 @@
-var n1 = 2
-switch(n1){
-case 1:console.log('1ºCaso')
-break
-case 2:console.log('2ºCaso')
-break
-case 3:console.log('3ºCaso')
-break
-default :console.log('Fora dos parâmetros!')
-break
+var idade = 16
+console.log(`Você tem ${idade} anos.`)
+if (idade < 16) {
+    console.log('Não vota')
+} else {
+    if (idade < 18 || idade > 65) {
+        console.log('Voto opcional')
+    } else {
+        console.log('Voto obrigatório')
+    }
 }

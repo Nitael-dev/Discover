@@ -12,10 +12,11 @@
     </header>
     <section id="sec">
         <p id="msg">
-            Agora é 
-        </p> <input type="button" value="verificar" id="botao">
-        <img src="dia.png" alt="" id="imagem">
+            Agora são... 
+        </p>
+        <img src="" alt="" id="imagem">
     </section>
+
     <footer id="copyr">
         Copy
     </footer>
@@ -41,9 +42,12 @@
         font: normal 16pt Arial;
         color: rgb(255, 255, 255);
         text-align: left;
-        padding-left: 50px;
+        padding-left: 160px;
         padding-top: 15px;
         text-shadow: 2.2px 2.2px rgba(0, 0, 0, 0.808);
+    }
+    img#imagem {
+        padding-left: 130px;
     }
     footer#copyr{
         font: italic 12pt georgia;
@@ -57,19 +61,18 @@
     <script>
         function carregar(){
             var msg = document.querySelector('p#msg')
-            var botar = document.querySelector('input#botao')
             var per = document.querySelector('img#imagem')
             var d = new Date()
             var d1 = d.getHours()
             var d2 = d.getMinutes()
-            if(d1 >6 && d1 <12){
-                msg.innerHTML += `Dia! ${d1}:0${d2} horas!`
+            if (d1 >6 && d1 <= 12) {
+                msg.innerHTML = `Dia! ${d1} horas!`
                 per.src = 'dia.png'
-            }else{
-                if(d1 >12 && d1 <18){
+            } else {
+                if (d1 > 12 && d1 <= 18) {
                     msg.innerHTML = `Tarde! ${d1} horas!`
                     per.src = 'tarde.png'
-                }else{
+                } else {
                     msg.innerHTML = `Noite! ${d1} horas!`
                     per.src = 'noite.png'
                 }

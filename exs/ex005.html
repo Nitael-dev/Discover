@@ -7,23 +7,28 @@
     <title>Document</title>
     <style>
         body {
-            background-color:rgb(108, 115, 218);
-            color: rgb(0, 0, 0);
+            background: rgb(68, 125, 199);
+            color: white;
+            font: normal 18pt arial;
         }
+
     </style>
 </head>
 <body>
-    <h1>Bem vindo</h1>
-    <p>diga ola para <strong>ZA WARUDO</strong> por favor</p>
-    <p>eu imploro sabugador</p>
-    <div id="jhonson">Mande um salve para o pai</div>
+    <h1>Iniciando estudos DOM</h1>
+    <p>Aqui vai o resultado</p>
+    <p>Aprendendo a usar o <strong>DOM</strong> em JavaScript.</p>
+    <div class="msg">Clique em mim</div>
+    <script>
+        var corpo = window.document.body
+        var p1 = window.document.getElementByTagName('p')[1]
+        /*
+        var d = window.document.getElementById('msg')
+        d.style.background = 'green'
+        d.innerText = 'Estou aguardando...'
+        */
+        var d = window.document.querySelector('div.msg')
+        d.style.background = 'blue'
+    </script>
 </body>
-<script>
-var n1 = window.document.querySelector('div#jhonson')
-var n2 = document.write('Leia isso ' + n1.innerText)
-n1.style.color = 'aquamarine'
-n1.style.backgroundColor = 'black'
-n2.style.color = 'aquamarine'
-
-</script>
 </html>

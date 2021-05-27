@@ -8,16 +8,22 @@
 </head>
 <body>
     <section id="sec">
-        <button id="botao" onclick="testar()"></button>
+        <button id="botao"></button>
     </section>
+    <footer id="foot">
+
+    </footer>
     <script>
-        function testar(){
-        var sec = document.getElementById('sec')
-        var but = [1,2,3,4,5,6,7]
-        for(var b in but){
-           sec.innerHTML += `Na key ${b} aparece o valor ${but[b]}</br>`
+        function testar(n){
+            if(n % 2 == 0){
+                return'par'
+            } else {
+                return'ímpar'
+            }
         }
-        }
+        var res = testar(6)
+        var foot = document.getElementById('foot')
+        foot.innerHTML = `${res}`
     </script>
 </body>
 </html>

@@ -7,67 +7,15 @@
     <title>Document</title>
 </head>
 <body>
-    <header id="title">
-        Título
-    </header>
     <section id="sec">
-        <header id="h1">
-            Insira um número
-        </header>
-        <div id="div1">
-           <input type="number" name="num1" id="num1">
-           <input type="button" value="mostrar" id="but1" onclick="mostrar()"><br>
-           <button>
-               
-           </button>
-        </div>
-        <select name="sel" id="sel" size="10">
-            
-        </select>
+        <button id="botao" onclick="testar()"></button>
     </section>
-    <footer id="foot">
-
-    </footer>
-    <style>
-        body{
-            background-color: gray;
-        }
-        header#title{
-            font: normal 22pt arial;
-            color: white;
-            text-align:center;
-        }
-        section#sec{
-            background-color: rgba(99, 99, 163, 0.507);
-            width: 500px;
-            height: 500px;
-            border-radius: 22px;
-            margin: auto;
-            box-shadow:2px 2px 2px rgba(0, 0, 0, 0.76);
-            padding: 20px;
-        }
-        header#h1{
-            color: white;
-            font: normal 13pt arial;
-            text-shadow: 2px 2px 2px black;
-            padding-top:20px ;
-            padding-bottom: 15px;
-        }
-        div#div1{
-            padding-bottom: 20px;
-        }
-    </style>
     <script>
-        function mostrar(){
-        var num = document.getElementById('num1')
-        var but = document.getElementById('but1')
-        var sel = document.getElementById('sel')
-        sel.innerHTML = ''
-        var n = Number(num.value)
-        for(var c = 1;c <= 10;c++){
-            var opt = document.createElement('option','sel')
-            sel.appendChild(opt)
-            opt.innerHTML = `${n} x ${c} = ${n * c}`
+        function testar(){
+        var sec = document.getElementById('sec')
+        var but = [1,2,3,4,5,6,7]
+        for(var b in but){
+           sec.innerHTML += `Na key ${b} aparece o valor ${but[b]}</br>`
         }
         }
     </script>

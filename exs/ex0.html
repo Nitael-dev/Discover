@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header id="title">
+        Título
+    </header>
+    <section id="sec">
+        <p id="p1">
+            Quantos olás você quer?
+        </p>
+        <div id="d1">
+            <input type="number" name="num1" id="num1">
+            <input type="button" value="olá" id="but1" onclick="subtrair()">
+        </div>
+        <p id="p2">
+            <strong>
+                Resultado
+            </strong>
+            :
+        </p>
+    </section>
+    <style>
+        body{
+            background-color: gray;
+        }
+        header#title{
+            font: normal 18pt arial;
+            color: white;
+            text-align: center;
+        }
+        section#sec{
+            background-color: blue;
+            width: 500px;
+            height: 500px;
+            margin: auto;
+            border-radius: 20px;
+        }
+        div#d1{
+            font: normal 13pt arial;
+            color: white;
+            text-align: center;
+        }
+        p#p1{
+            font: normal 13pt arial;
+            color: white;
+            text-align: center;
+            padding-top: 20px;
+            text-shadow: 2px 2px 2px black;
+        }
+        p#p2{
+            font: normal 13pt arial;
+            color: white;
+            text-align: center;
+            padding-top: 10px;
+        }
+    </style>
+    <script>
+        function subtrair(){
+            var num = document.getElementById('num1')
+            var but = document.getElementById('but1')
+            var p2 = document.getElementById('p2')
+            var div = document.getElementById('d1')
+            var n = Number(num.value)
+            p2.innerHTML = '<strong>Resultado</strong>:'
+            while (n >0){
+                n--
+                p2.innerHTML += '<br>Olá,<br/>'
+            }
+        }
+</script>
+</body>
+</html>

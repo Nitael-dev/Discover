@@ -8,24 +8,17 @@
 </head>
 <body>
     <section id="sec">
-        <button id="botao" onclick="testar()"></button>
+        <button id="botao"></button>
     </section>
     <footer id="foot">
 
     </footer>
     <script>
-        function testar(){
-        var sec = document.getElementById('sec')
-        var foot = document.getElementById('foot')
-        var but = [1,2,3,4,5,6,7]
-        but.sort
-        var ind = but.indexOf(3)
-        for(var key = 0;key <= 6;key++){
-           sec.innerHTML += `Na key ${key} aparece o valor ${but[key]}</br>`
-        }
-        foot.innerHTML = `${ind}`
-        }
-        
+      var v = function(x) {
+          return `${x *2}`
+      }
+      var foot = document.getElementById('foot')
+      foot.innerHTML = `${v(25)}`
     </script>
 </body>
 </html>
