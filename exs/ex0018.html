@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header id="title">
+        Título
+    </header>
+    <section id="sec">
+        <div id="divnumb">
+        <p id="p-ini">
+            <strong id="s1">Início:</strong><input type="number" name="num1" id="ini">
+        </p>
+        <p id="p-fim">
+            <strong id="s2">Fim:</strong><input type="number" name="num2" id="fim">
+        </p>
+        <p id="p-passo">
+            <strong id="s3">Passo:</strong><input type="number" name="num3" id="passo">
+            <button type="button" value="iniciar" id="but" onclick="iniciar()">Finalizar</button>
+        </p>
+        </div>
+        <footer id="foot1">
+            resultado:
+        </footer>
+    </section>
+    <style>
+        body{
+            background-color: gray;
+        }
+        header#title{
+            color: white;
+            font: normal 22pt arial;
+            text-align: center;
+            padding-bottom: 15px;
+            text-shadow: 2px 2px 2px black;
+        }
+        section#sec{
+            background-color: rgb(120, 120, 192);
+            width: 500px;
+            height: 500px;
+            border-radius: 22px;
+            margin: auto;
+            box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.603);
+        }
+        strong#s1{
+            text-shadow: 2px 2px 2px black;
+        }
+        strong#s2{
+            text-shadow: 2px 2px 2px black;
+        }
+        strong#s3{
+            text-shadow: 2px 2px 2px black;
+        }
+        p#p-ini{
+            color: white;
+            font-variant: normal 13pt arial;
+            padding: 20px;
+            padding-top: 30px;
+        }
+        p#p-fim{
+            color: white;
+            font-variant: normal 13pt arial;
+            padding: 20px;
+            padding-top: 1px;
+            padding-left: 30px;
+
+        }
+        input{
+            border-radius: 10px;
+            border: 0;
+            margin-left: 8px;
+            height: 18px;
+        }
+        p#p-passo{
+            color: white;
+            font-variant: normal 13pt arial;
+            padding: 20px;
+            padding-top: 1px;
+        }
+        button{
+                background: rgb(216, 74, 74);
+                border:0 ;
+                width: 80px;
+                height: 20px;
+                border-radius: 10px;
+                font-size: 16px;
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                cursor: pointer;
+            }
+        button:hover{
+                    background:rgba(216, 74, 74, 0.521);
+                    color: white;
+                }
+                footer#foot1{
+            font: normal 13pt arial;
+            color: white;
+            text-align: center;
+            text-shadow: 2px 2px 2px black;
+        }
+    </style>
+    <script>
+        function iniciar(){
+        var ini = document.getElementById('ini')
+        var fim = document.getElementById('fim')
+        var passo = document.getElementById('passo')
+        var foot = document.getElementById('foot1')
+        var but = document.getElementById('but')
+        foot.innerHTML = 'resultado:'
+        if (ini.value.length == 0 || fim.value.length == 0 || passo.value.length == 0) {
+                window.alert('Erro')
+
+        }   else {
+            var i = Number(ini.value)
+            var f = Number(fim.value)
+            var p = Number(passo.value)
+                if(i < f){                   
+                    for(var n1 = i;n1 <= f;n1 += p){
+                        foot.innerHTML += `${n1} `   
+                        }
+                        }else{
+                        for(var n1 = i;n1 >= f;n1 -= p){
+                        foot.innerHTML += `${n1} `
+                        }
+                        }
+            }
+        
+        }
+        
+    </script>
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <Style>
+        body{
+            background: blueviolet;
+        }
+        div#res{
+            font: normal 15pt arial;
+            color: darkorange;
+        }
+        h1#title{
+            font: normal 26pt georgia;
+            color: darkorange;
+        }
+        input#butn1{
+            font: normal 16pt arial;
+            background: blueviolet;
+            color: deepskyblue;
+        }
+        input#txtn1{
+            font: normal 13pt arial;
+            background: blueviolet;
+            height: 20px;
+            width: 130px;
+            font-weight: normal 200px;
+        }
+    </Style>
+    <h1 id="title">Diga-nos sua nacionalidade</h1>
+    <input type="text" name="txtn1" id="txtn1">
+    <input type="button" value="verificar" id="butn1" onclick="comparar()">
+    <div id="res">Você é ...</div>
+<script>
+    function comparar(){ 
+    var txtn1 = document.getElementById('txtn1')
+    var butn1 = document.getElementById('butn1')
+    var res = document.getElementById('res')
+    var n1 = String(txtn1.value)
+    if(n1 =='Brasil'){
+        res.innerHTML = 'Você é <strong>Brasileiro<strong/>'
+    }else(n1 != 'Brasil')[
+        res.innerHTML = 'Você é <strong>Estrangeiro<strong/>'
+    ]
+    }
+
+</script>
+</body>
+</html

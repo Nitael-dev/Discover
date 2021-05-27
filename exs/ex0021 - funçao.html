@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <section id="sec">
+        <button id="botao"></button>
+    </section>
+    <footer id="foot">
+
+    </footer>
+    <script>
+        function fatorial(n) {
+            var c = 1
+            for(var fat = n;fat > 1;fat--){
+            c *=fat
+            }
+            return c
+        }
+        var f = fatorial(5)
+        var foot = document.getElementById('foot')
+        foot.innerHTML = `${f}`
+    </script>
+</body>
+</html>
