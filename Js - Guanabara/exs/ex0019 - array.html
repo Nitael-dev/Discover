@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <section id="sec">
+        <button id="botao" onclick="testar()"></button>
+    </section>
+    <footer id="foot">
+
+    </footer>
+    <script>
+        function testar(){
+        var sec = document.getElementById('sec')
+        var foot = document.getElementById('foot')
+        var but = [1,2,3,4,5,6,7]
+        but.sort
+        var ind = but.indexOf(3)
+        for(var key = 0;key <= 6;key++){
+           sec.innerHTML += `Na key ${key} aparece o valor ${but[key]}</br>`
+        }
+        foot.innerHTML = `${ind}`
+        }
+        
+    </script>
+</body>
+</html>

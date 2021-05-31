@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <header>Título</header>
+    <section>
+        <p id="p1"></p>
+        <div id='div1'> 
+            <p id="p2">Insira seu ano de nascimento:</p>
+
+            <div id="div2"> 
+                <input type="number" name="numbn1" id="numbn1"> 
+                <input type="button" value="verificar" id="butn1" onclick="verificar()">
+            </div>
+
+            <footer id="sfoot">
+                
+            </footer>
+        </div>
+    </section>
+    <footer id="f1">Copy</footer>
+    <style>
+        header {
+            font: normal 17pt Arial;
+            text-align: center;
+        }
+
+        section {
+            background-color: rgb(168, 47, 38);
+            width: 400px;
+            height: 300px;
+            margin: auto;
+            border-radius: 20px;
+            box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.39);
+        }
+
+        body {
+            background: rgb(159, 189, 243);
+            color: rgb(255, 255, 255);
+            
+        }
+
+        p#p1 {
+            font: normal 14pt arial;
+            padding-left: 28px;
+            padding-top: 20px;
+            line-height: 1mm;
+        }
+
+        div#div1 {
+            font: normal 11pt arial;
+            padding-left: 28px;
+        }
+
+        p#p2 {
+            font: normal 14pt arial;
+            line-height: 1mm;
+        }
+
+        footer#f1 {
+            font: italic 12pt georgia;
+            padding: 26px;
+            text-align: center;
+        }
+    </style>
+    <script>
+        function verificar() {
+            var numb = document.getElementById('numbn1')
+            var msg = document.getElementById('sfoot')
+            var n1 = Number(numb.value)
+            if (n1 >= 1961 && n1 <= 2003) {
+                msg.innerHTML = 'Maior'
+            } else {
+                if (n1 > 2003) {
+                    msg.innerHTML = 'Menor'
+                } else {
+                        msg.innerHTML = 'Idoso'
+                    }
+                }
+        }
+    </script>
+
+</body>
+
+</html>

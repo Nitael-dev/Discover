@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="title">A quanto tempo</h1>
+    <input type="number" name="txtn1" id="txtn1"> +
+    <input type="number" name="txtn2" id="txtn2">
+    <input type="button" id='bot' value='Somar' onclick='somar()'>
+<div id="res">Salve meus consagrados</div>
+<style>
+h1#title{
+font: normal 16pt Arial;
+height: 23px;
+width: 200px;
+color: rgb(0, 0, 0);
+}
+div#res{
+font: normal 13pt georgia;
+}
+body{
+background: dodgerblue;
+}
+</style>
+
+    <script>
+        function somar(){
+var tn1 = document.getElementById('txtn1')
+var tn2 = document.getElementById('txtn2')
+var tn3 = document.getElementById('res')
+var n1 = Number(tn1.value)
+var n2 = Number(tn2.value)
+var res = n1 + n2
+tn3.innerHTML = 'A soma de ' + n1 + ' e ' + n2 + ' é ' + res
+}
+    </script>
+</body>
+</html>
