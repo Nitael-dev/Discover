@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="exe002.css">
+</head>
+<body>
+    <header>
+        <h1 id="h1">Título</h1>
+    </header>
+    <section id="sec">
+        <div id="divname">
+            <h2 id="head">Cadastro</h2>
+            <label id="labelname" for="completename">Nome Completo:</label>
+            <input  id="completename">
+            
+        </div>
+
+        <div id="divemail">
+            <label id="labelemail" for="email">E-mail:</label>
+            <input type="email" name="email" id="email">
+        </div>
+
+        <div id="divpassword">
+            <label id="labelpassword" for="password">Senha:</label>
+            <input type="password" name="password" id="password">
+        </div>
+
+        <div id="divconpassword">
+            <label id="labelconpassword" for="password">Confirmar Senha:</label>
+            <input type="password" name="conpassword" id="conpassword">
+        </div>
+        <p><button onclick="confirm()">Confirmar</button></p>
+        <div id="result">
+
+        </div>
+    </section>
+
+
+    <script src="exe002.js"></script>
+</body>
+</html>

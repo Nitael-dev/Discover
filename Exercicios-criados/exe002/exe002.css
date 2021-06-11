@@ -1,0 +1,78 @@
+body {
+    background-color: rgb(11, 2, 41);
+}
+h1#h1 {
+    color: white;
+    text-align: center;
+    font: normal 28pt arial;
+}
+section#sec {
+    padding-left: 20px;
+    padding-bottom: 30px;
+    background-color: rgb(228, 47, 47);
+    border-radius: 30px;
+    width: 380px;
+    height: 250px;
+    box-shadow:6px 6px 6px rgba(68, 66, 66, 0.705);
+    border-color: rgba(66, 66, 66, 0.616);
+    border-width: 4px;
+    border-style:groove ;
+}
+h2#head {
+    color: white;
+    font: normal 16pt verdana;
+    padding-left: 50px;
+    padding-top: 10px;
+    text-shadow:1px 1.2px 1px rgb(102, 101, 101);
+}
+label#labelname {
+    color: white;
+    font: normal 13pt verdana;
+    text-shadow: 1px 1px 1px rgba(88, 84, 84, 0.521);
+}
+input#completename {
+    box-shadow:0.5px 0.5px 0.5px rgba(107, 95, 95, 0.123);
+    font: normal 11pt verdana;
+    border-radius: 7px;
+    border-color: rgba(0, 0, 0, 0.493);
+    background-color: rgba(0, 0, 0, 0);
+}
+label#labelemail {
+    color: white;
+    font: normal 13pt verdana;
+    text-shadow: 1px 1px 1px rgba(88, 84, 84, 0.521);
+}
+input#email {
+    box-shadow:0.5px 0.5px 0.5px rgba(107, 95, 95, 0.123);
+    font: normal 11pt verdana;
+    border-radius: 7px;
+    border-color: rgba(0, 0, 0, 0.493);
+    width: 248px;
+    background-color: rgba(0, 0, 0, 0);
+}
+label#labelpassword {
+    color: white;
+    font: normal 13pt verdana;
+    text-shadow: 1px 1px 1px rgba(88, 84, 84, 0.521);
+}
+input#password {
+    box-shadow:0.5px 0.5px 0.5px rgba(107, 95, 95, 0.123);
+    font: normal 11pt verdana;
+    border-radius: 7px;
+    border-color: rgba(0, 0, 0, 0.493);
+    width: 254px;
+    background-color: rgba(0, 0, 0, 0);
+}
+label#labelconpassword {
+    color: white;
+    font: normal 13pt verdana;
+    text-shadow: 1px 1px 1px rgba(88, 84, 84, 0.521);
+}
+input#conpassword {
+    box-shadow:0.5px 0.5px 0.5px rgba(107, 95, 95, 0.123);
+    font: normal 11pt verdana;
+    border-radius: 7px;
+    border-color: rgba(0, 0, 0, 0.493);
+    width: 178px;
+    background-color: rgba(0, 0, 0, 0);
+}
