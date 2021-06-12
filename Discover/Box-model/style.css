@@ -1,0 +1,72 @@
+/* box sizing
+* {
+    box-sizing: border-box;
+}
+div {
+    width: 100px;
+    height: 100px;
+    border: 1px solid red;
+    margin: 10%;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+*/
+/* display:block / inline
+div { 
+    height: 100px;
+    border: 1px solid red;
+    width: 10px;
+    margin: 20px;
+    display: inline;
+}
+span {
+    width: 10px;
+    height: 100px;
+    border: 1px solid green;
+    margin: 20px;
+    display: block;
+} */
+/* margin (Espaços fora da caixa)
+* {
+    margin: 0;
+}
+
+div, section {
+    border: 1px solid red;
+    width: 100px;
+    height: 100px;
+    margin: 10px auto;
+}
+div {
+    margin-bottom: 14px;
+}
+
+section {
+    margin-top: 12px;
+} */
+/* padding (Preenchimento interno)
+* {
+    margin: 0;
+}
+div, section {
+    border: 1px solid red;
+    padding: 10px 2em 8px 50%;
+} */
+* {
+    margin: 0;
+}
+div, section {
+    width: 100px;
+    height: 100px;
+    margin: 20% auto;
+
+    border: 10px solid red;
+    border-top: green solid;
+    border-bottom: none;
+    outline: yellow 5px solid;
+
+    box-sizing: border-box;
+}
+input {
+    outline: red 1px solid;
+} 
