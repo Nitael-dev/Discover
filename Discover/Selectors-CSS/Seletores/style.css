@@ -1,0 +1,60 @@
+/*  Seletores
+#content {
+    color:yellow;
+}
+#title {
+    color: purple;
+}
+h1 {
+    color:blue;
+    font-size: 60px;
+}
+p {
+    color: green;
+}
+.red {
+    color: red;
+}
+.big {
+    font-size: 3em;
+}
+[title] {
+    color: orange;
+}
+p:hover, h1:hover, .red {
+    color:red;
+}
+*/
+/* Combinando seletores
+body h2 {
+    color: red;
+}
+*/
+/* Child combinator
+body > ul > li {
+    color:blue;
+}
+ul > ul > li {
+    color: orange;
+}
+*/
+/*  Adjacent sibling  
+h1 + p {
+    color: red;
+}
+
+button + button {
+    margin-left:32px;
+}
+*/
+/*  General sibling
+h1 ~ p {
+    color: purple;
+}
+*/
+ul > li[class="red"] {
+    color:red;
+}
+.red {
+    color:red;
+}

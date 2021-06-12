@@ -1,0 +1,41 @@
+/*  :first-child
+ul h3:first-child {
+    font-weight: bold;
+    color:red;
+}
+*/
+/* :nth-of-type()
+article p:nth-of-type() {
+    font-weight: bold;
+    font-size: 18px;
+} :nth-child()
+article p:nth-child(2) {
+    font-weight: bold;
+    font-size: 18px;
+    color: violet;
+}
+*/
+/* :nth-child(even / odd) even = nº pares | odd = nº ímpares
+ul li:nth-child(odd) {
+    color: gray;
+    background-color: greenyellow;
+}
+ul li:nth-child(even) {
+    color: red;
+}
+*/
+/* Ações do usuário
+a:hover {
+    color:red;
+}
+input:focus {
+    border-color: violet;
+    outline: none;
+}
+input:disabled {
+    background-color: green;
+}
+input:required {
+    background-color: red;
+}
+*/

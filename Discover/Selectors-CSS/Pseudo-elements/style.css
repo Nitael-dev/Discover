@@ -1,0 +1,21 @@
+/* ::after / ::before
+li::before {
+    content: "> "
+}
+li {
+    position: relative;
+}
+li::after {
+    content: "";
+    width:10px;
+    height: 1px;
+    background-color: blue;
+    position: absolute;
+    bottom: 0px;
+}
+*/
+/* ::first-line
+p:nth-of-type(2)::first-line {
+    font-weight: bold;
+}
+*/
