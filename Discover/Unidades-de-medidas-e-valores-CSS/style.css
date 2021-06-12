@@ -1,0 +1,54 @@
+/* Distâncias
+ :root {
+}
+Ou 
+html {
+
+} Para fazer alterações na raiz
+
+
+
+div {
+    font-size: 32px;
+}
+p {
+     font-size: 1em; multiplica o valor dado pelo pai 
+     font-size: 1rem; multiplica o valor dado pelo root (16px = padrão) 
+}
+*/
+
+/* Porcentagens
+body {
+    width: 50%;
+}
+
+li {
+    font-size: 50%;
+}
+div {
+    background-color: blue;
+    width: 50%;
+    height: 100px;
+}
+*/
+
+
+body {
+    height: 100vh;
+    margin: 0;
+}
+
+.box {
+    height: calc(100% - 300px);
+    width: 400px;
+    background-image:url(http://source.unsplash.com/random);
+    background-repeat: no-repeat;
+    background-position: top bottom;
+}
+
+/* 
+.box::after { <── Pseudo element
+    content: "Aqui vem alguma mensagem";
+    color: white;
+}
+*/
