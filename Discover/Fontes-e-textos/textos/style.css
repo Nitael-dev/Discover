@@ -1,0 +1,14 @@
+p {
+    font-variant: small-caps;
+    font-size: 24px;
+    font-stretch: condensed;
+    letter-spacing: 4px;
+    word-spacing: 20px;
+    line-height: 1.6;
+    text-transform: capitalize;
+    text-decoration: underline overline line-through dotted red;
+    text-align: center;
+    text-shadow: 2px 2px 4px black;
+    /* -style, -variant, -weight, -stretch, -size, -line-height, -family */
+    font: italic normal bold normal 1.7em/1.2 Helvetica Arial, sans-serif;
+}
